@@ -31,6 +31,7 @@ LIBS:valves
 LIBS:_Active
 LIBS:_Connector
 LIBS:_Passive
+LIBS:SparkFun-Jumpers
 LIBS:EEPROM-Header-cache
 EELAYER 25 0
 EELAYER END
@@ -68,9 +69,7 @@ F 3 "" H 6100 4000 50  0000 C CNN
 	1    6100 4000
 	1    0    0    -1  
 $EndComp
-Text GLabel 7300 3000 3    40   Input ~ 0
-I2C_SCL
-Text GLabel 2650 3950 0    40   Input ~ 0
+Text GLabel 2400 3950 0    40   Input ~ 0
 I2C_SDA
 Wire Wire Line
 	3100 4050 2950 4050
@@ -81,49 +80,35 @@ Wire Wire Line
 Wire Wire Line
 	3000 3850 3100 3850
 Wire Wire Line
-	2650 3950 3100 3950
-Text GLabel 2850 4150 0    40   Input ~ 0
+	2400 3950 3100 3950
+Text GLabel 2400 4150 0    40   Input ~ 0
 SPI_MISO
-Text GLabel 2850 4250 0    40   Input ~ 0
+Text GLabel 2400 4250 0    40   Input ~ 0
 SPI_MOSI
-Text GLabel 8500 3000 3    40   Input ~ 0
-SPI_CS1
-Text GLabel 8800 3000 3    40   Input ~ 0
-SPI_CS2
-Text GLabel 9100 3000 3    40   Input ~ 0
-SPI_CS3
-Text GLabel 8200 3000 3    40   Input ~ 0
-SPI_CLK
-Text GLabel 3700 3950 2    40   Input ~ 0
+Text GLabel 3950 3950 2    40   Input ~ 0
 I2C_SCL
 Wire Wire Line
-	3600 3950 3700 3950
-Text GLabel 3700 4250 2    40   Input ~ 0
+	3600 3950 3950 3950
+Text GLabel 3950 4250 2    40   Input ~ 0
 SPI_CS1
-Text GLabel 3700 4050 2    40   Input ~ 0
+Text GLabel 3950 4050 2    40   Input ~ 0
 SPI_CS2
-Text GLabel 3700 3850 2    40   Input ~ 0
+Text GLabel 3950 3850 2    40   Input ~ 0
 SPI_CS3
-Text GLabel 3700 4150 2    40   Input ~ 0
+Text GLabel 3950 4150 2    40   Input ~ 0
 SPI_CLK
 Wire Wire Line
-	2850 4150 3100 4150
+	2400 4150 3100 4150
 Wire Wire Line
-	3100 4250 2850 4250
-Text GLabel 7000 3000 3    40   Input ~ 0
-I2C_SDA
-Text GLabel 7600 3000 3    40   Input ~ 0
-SPI_MISO
-Text GLabel 7900 3000 3    40   Input ~ 0
-SPI_MOSI
+	3100 4250 2400 4250
 Wire Wire Line
-	3700 3850 3600 3850
+	3950 3850 3600 3850
 Wire Wire Line
-	3700 4050 3600 4050
+	3950 4050 3600 4050
 Wire Wire Line
-	3700 4150 3600 4150
+	3950 4150 3600 4150
 Wire Wire Line
-	3700 4250 3600 4250
+	3950 4250 3600 4250
 Text Notes 3100 4500 0    50   ~ 0
 Header from Board
 $Comp
@@ -157,7 +142,7 @@ Connection ~ 3650 3950
 Wire Wire Line
 	2800 3300 2800 3200
 Wire Wire Line
-	2800 3200 6700 3200
+	2800 3200 6100 3200
 Connection ~ 2950 3200
 Wire Wire Line
 	3650 3200 3650 3300
@@ -198,32 +183,11 @@ Wire Wire Line
 	6800 4100 6900 4100
 Wire Wire Line
 	6800 4200 6900 4200
-$Comp
-L CONN_02X03 P2
-U 1 1 5B3A46DA
-P 5050 3900
-F 0 "P2" H 5050 4100 50  0000 C CNN
-F 1 "CONN_02X03" H 5050 3700 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 5050 2700 50  0001 C CNN
-F 3 "" H 5050 2700 50  0000 C CNN
-	1    5050 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 4000 4800 4000
-Wire Wire Line
-	4700 3200 4700 4000
 Connection ~ 4700 3200
-Wire Wire Line
-	4800 3900 4700 3900
-Connection ~ 4700 3900
-Wire Wire Line
-	4800 3800 4700 3800
-Connection ~ 4700 3800
 Wire Wire Line
 	5300 3800 5400 3800
 Wire Wire Line
-	5300 3900 5400 3900
+	5200 3900 5400 3900
 Wire Wire Line
 	5300 4000 5400 4000
 $Comp
@@ -258,116 +222,6 @@ Connection ~ 4350 3200
 Wire Wire Line
 	4350 4650 4350 3600
 Connection ~ 4350 4650
-$Comp
-L TP_Top TT4
-U 1 1 5B3A4DE5
-P 7000 2900
-F 0 "TT4" H 7050 2930 35  0000 C CNN
-F 1 "SDA" H 7010 3030 50  0000 C CNN
-F 2 "_Connector:Test_Point_SMD_0.040_Top" H 7000 2950 50  0001 C CNN
-F 3 "" H 7000 2950 50  0000 C CNN
-	1    7000 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TP_Top TT11
-U 1 1 5B3A4E55
-P 9100 2900
-F 0 "TT11" H 9150 2930 35  0000 C CNN
-F 1 "CS3" H 9110 3030 50  0000 C CNN
-F 2 "_Connector:Test_Point_SMD_0.040_Top" H 9100 2950 50  0001 C CNN
-F 3 "" H 9100 2950 50  0000 C CNN
-	1    9100 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TP_Top TT6
-U 1 1 5B3A524E
-P 7600 2900
-F 0 "TT6" H 7650 2930 35  0000 C CNN
-F 1 "MISO" H 7610 3030 50  0000 C CNN
-F 2 "_Connector:Test_Point_SMD_0.040_Top" H 7600 2950 50  0001 C CNN
-F 3 "" H 7600 2950 50  0000 C CNN
-	1    7600 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TP_Top TT7
-U 1 1 5B3A5282
-P 7900 2900
-F 0 "TT7" H 7950 2930 35  0000 C CNN
-F 1 "MOSI" H 7910 3030 50  0000 C CNN
-F 2 "_Connector:Test_Point_SMD_0.040_Top" H 7900 2950 50  0001 C CNN
-F 3 "" H 7900 2950 50  0000 C CNN
-	1    7900 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TP_Top TT5
-U 1 1 5B3A52BB
-P 7300 2900
-F 0 "TT5" H 7350 2930 35  0000 C CNN
-F 1 "SCL" H 7310 3030 50  0000 C CNN
-F 2 "_Connector:Test_Point_SMD_0.040_Top" H 7300 2950 50  0001 C CNN
-F 3 "" H 7300 2950 50  0000 C CNN
-	1    7300 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TP_Top TT10
-U 1 1 5B3A52F4
-P 8800 2900
-F 0 "TT10" H 8850 2930 35  0000 C CNN
-F 1 "CS2" H 8810 3030 50  0000 C CNN
-F 2 "_Connector:Test_Point_SMD_0.040_Top" H 8800 2950 50  0001 C CNN
-F 3 "" H 8800 2950 50  0000 C CNN
-	1    8800 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TP_Top TT8
-U 1 1 5B3A5330
-P 8200 2900
-F 0 "TT8" H 8250 2930 35  0000 C CNN
-F 1 "CLK" H 8210 3030 50  0000 C CNN
-F 2 "_Connector:Test_Point_SMD_0.040_Top" H 8200 2950 50  0001 C CNN
-F 3 "" H 8200 2950 50  0000 C CNN
-	1    8200 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TP_Top TT9
-U 1 1 5B3A536F
-P 8500 2900
-F 0 "TT9" H 8550 2930 35  0000 C CNN
-F 1 "CS1" H 8510 3030 50  0000 C CNN
-F 2 "_Connector:Test_Point_SMD_0.040_Top" H 8500 2950 50  0001 C CNN
-F 3 "" H 8500 2950 50  0000 C CNN
-	1    8500 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TP_Top TT2
-U 1 1 5B3A597D
-P 6700 2900
-F 0 "TT2" H 6750 2930 35  0000 C CNN
-F 1 "3.3v" H 6710 3030 50  0000 C CNN
-F 2 "_Connector:Test_Point_SMD_0.040_Top" H 6700 2950 50  0001 C CNN
-F 3 "" H 6700 2950 50  0000 C CNN
-	1    6700 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TP_Top TT1
-U 1 1 5B3A59CE
-P 6300 4600
-F 0 "TT1" H 6350 4630 35  0000 C CNN
-F 1 "GND" H 6310 4730 50  0000 C CNN
-F 2 "_Connector:Test_Point_SMD_0.040_Top" H 6300 4650 50  0001 C CNN
-F 3 "" H 6300 4650 50  0000 C CNN
-	1    6300 4600
-	1    0    0    -1  
-$EndComp
 Text Notes 5050 5300 0    50   ~ 0
 Note: A0, A1, A2 address lines and WP have internal pulldowns
 $Comp
@@ -404,25 +258,63 @@ F 3 "" H 4150 5200 150 0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 2900 7000 3000
+	3000 4650 6100 4650
+$Comp
+L JUMPER-SMT_2_NO JP1
+U 1 1 5B3AC030
+P 5050 3600
+F 0 "JP1" H 4950 3700 45  0000 L BNN
+F 1 "A0" H 5150 3700 45  0000 L BNN
+F 2 "Sparkfun-Jumpers:SMT-JUMPER_2_NO_SILK" H 5050 3800 20  0001 C CNN
+F 3 "" H 5050 3600 60  0001 C CNN
+F 4 "XXX-00000" H 5050 3850 60  0001 C CNN "PROD_ID"
+	1    5050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER-SMT_2_NO JP2
+U 1 1 5B3AC0B7
+P 5050 3900
+F 0 "JP2" H 4950 4000 45  0000 L BNN
+F 1 "A1" H 5100 4000 45  0000 L BNN
+F 2 "Sparkfun-Jumpers:SMT-JUMPER_2_NO_SILK" H 5050 4100 20  0001 C CNN
+F 3 "" H 5050 3900 60  0001 C CNN
+F 4 "XXX-00000" H 5050 4150 60  0001 C CNN "PROD_ID"
+	1    5050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER-SMT_2_NO JP3
+U 1 1 5B3AC12B
+P 5050 4200
+F 0 "JP3" H 4950 4300 45  0000 L BNN
+F 1 "A2" H 5100 4300 45  0000 L BNN
+F 2 "Sparkfun-Jumpers:SMT-JUMPER_2_NO_SILK" H 5050 4400 20  0001 C CNN
+F 3 "" H 5050 4200 60  0001 C CNN
+F 4 "XXX-00000" H 5050 4450 60  0001 C CNN "PROD_ID"
+	1    5050 4200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	7300 2900 7300 3000
+	4700 4200 4900 4200
 Wire Wire Line
-	7600 2900 7600 3000
+	4700 3200 4700 4200
 Wire Wire Line
-	7900 2900 7900 3000
+	4900 3600 4700 3600
+Connection ~ 4700 3600
 Wire Wire Line
-	8200 2900 8200 3000
+	4900 3900 4700 3900
+Connection ~ 4700 3900
 Wire Wire Line
-	8500 2900 8500 3000
+	5200 3600 5300 3600
 Wire Wire Line
-	8800 2900 8800 3000
+	5300 3600 5300 3800
 Wire Wire Line
-	9100 2900 9100 3000
+	5300 4000 5300 4200
 Wire Wire Line
-	3000 4650 6300 4650
-Wire Wire Line
-	6700 3200 6700 2900
-Wire Wire Line
-	6300 4650 6300 4600
+	5300 4200 5200 4200
+Text Label 3800 3950 0    40   ~ 0
+SCL
+Text Label 2500 3950 0    40   ~ 0
+SDA
 $EndSCHEMATC
