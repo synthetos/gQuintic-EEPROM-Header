@@ -436,4 +436,37 @@ Wire Wire Line
 Connection ~ 3050 4250
 Text Notes 3950 4900 0    50   ~ 0
 Note: A0, A1, A2 address lines and WP have internal pulldowns
+$Comp
+L Fiducial_Top FID1
+U 1 1 5B3A6568
+P 2050 4800
+F 0 "FID1" H 2050 4900 40  0000 C CNN
+F 1 "Fiducial_Top" H 2050 4700 40  0000 C CNN
+F 2 "_Connector:Fiducial_0.040_Top" H 2050 4800 150 0001 C CNN
+F 3 "" H 2050 4800 150 0000 C CNN
+	1    2050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fiducial_Top FID2
+U 1 1 5B3A65C0
+P 2550 4800
+F 0 "FID2" H 2550 4900 40  0000 C CNN
+F 1 "Fiducial_Top" H 2550 4700 40  0000 C CNN
+F 2 "_Connector:Fiducial_0.040_Top" H 2550 4800 150 0001 C CNN
+F 3 "" H 2550 4800 150 0000 C CNN
+	1    2550 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fiducial_Top FID3
+U 1 1 5B3A6619
+P 3050 4800
+F 0 "FID3" H 3050 4900 40  0000 C CNN
+F 1 "Fiducial_Top" H 3050 4700 40  0000 C CNN
+F 2 "_Connector:Fiducial_0.040_Top" H 3050 4800 150 0001 C CNN
+F 3 "" H 3050 4800 150 0000 C CNN
+	1    3050 4800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
