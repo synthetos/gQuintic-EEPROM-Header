@@ -1,0 +1,439 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:_Active
+LIBS:_Connector
+LIBS:_Passive
+LIBS:EEPROM-Header-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "EEPROM Expansion Header"
+Date "2-July-2018"
+Rev "revA"
+Comp "Synthetos"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X05 P1
+U 1 1 5B3A21C8
+P 2250 3650
+F 0 "P1" H 2250 3950 50  0000 C CNN
+F 1 "CONN_02X05" H 2250 3350 50  0000 C CNN
+F 2 "_Connector:0.100_2x5_small" H 2250 2450 50  0001 C CNN
+F 3 "" H 2250 2450 50  0000 C CNN
+	1    2250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X05 P3
+U 1 1 5B3A222F
+P 7950 3650
+F 0 "P3" H 7950 3950 50  0000 C CNN
+F 1 "CONN_02X05" H 7950 3350 50  0000 C CNN
+F 2 "_Connector:0.100_2x5_small" H 7950 2450 50  0001 C CNN
+F 3 "" H 7950 2450 50  0000 C CNN
+	1    7950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 24C512 U1
+U 1 1 5B3A39D3
+P 5000 3600
+F 0 "U1" H 5150 3950 50  0000 C CNN
+F 1 "24C512" H 5200 3250 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm" H 5000 3600 50  0001 C CNN
+F 3 "" H 5000 3600 50  0000 C CNN
+	1    5000 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 3550 2    40   Input ~ 0
+I2C_SCL
+Text GLabel 1550 3550 0    40   Input ~ 0
+I2C_SDA
+Wire Wire Line
+	2000 3650 1850 3650
+Wire Wire Line
+	1850 3650 1850 2800
+Wire Wire Line
+	1900 3450 1900 4250
+Wire Wire Line
+	1900 3450 2000 3450
+Wire Wire Line
+	1550 3550 2000 3550
+Text GLabel 1750 3750 0    40   Input ~ 0
+SPI_MISO
+Text GLabel 1750 3850 0    40   Input ~ 0
+SPI_MOSI
+Text GLabel 9700 3850 2    40   Input ~ 0
+SPI_CS1
+Text GLabel 9700 3650 2    40   Input ~ 0
+SPI_CS2
+Text GLabel 9700 3450 2    40   Input ~ 0
+SPI_CS3
+Text GLabel 9700 3750 2    40   Input ~ 0
+SPI_CLK
+Text GLabel 2600 3550 2    40   Input ~ 0
+I2C_SCL
+Wire Wire Line
+	2500 3550 2600 3550
+Text GLabel 2600 3850 2    40   Input ~ 0
+SPI_CS1
+Text GLabel 2600 3650 2    40   Input ~ 0
+SPI_CS2
+Text GLabel 2600 3450 2    40   Input ~ 0
+SPI_CS3
+Text GLabel 2600 3750 2    40   Input ~ 0
+SPI_CLK
+Wire Wire Line
+	1750 3750 2000 3750
+Wire Wire Line
+	2000 3850 1750 3850
+Wire Wire Line
+	8200 3450 9700 3450
+Wire Wire Line
+	8200 3650 9700 3650
+Wire Wire Line
+	8200 3750 9700 3750
+Wire Wire Line
+	8200 3850 9700 3850
+Wire Wire Line
+	7550 3650 7700 3650
+Wire Wire Line
+	7700 3450 7600 3450
+Text GLabel 6550 3550 0    40   Input ~ 0
+I2C_SDA
+Text GLabel 6550 3750 0    40   Input ~ 0
+SPI_MISO
+Text GLabel 6550 3850 0    40   Input ~ 0
+SPI_MOSI
+Wire Wire Line
+	2600 3450 2500 3450
+Wire Wire Line
+	2600 3650 2500 3650
+Wire Wire Line
+	2600 3750 2500 3750
+Wire Wire Line
+	2600 3850 2500 3850
+Wire Wire Line
+	6550 3550 7700 3550
+Wire Wire Line
+	6550 3750 7700 3750
+Wire Wire Line
+	6550 3850 7700 3850
+Text Notes 2000 4100 0    50   ~ 0
+Header from Board
+Text Notes 7700 4100 0    50   ~ 0
+Header to External
+$Comp
+L R R1
+U 1 1 5B3A3F58
+P 1700 3050
+F 0 "R1" V 1780 3050 50  0000 C CNN
+F 1 "np" V 1700 3050 50  0000 C CNN
+F 2 "_Passive:R_0402" V 1630 3050 50  0001 C CNN
+F 3 "" H 1700 3050 50  0000 C CNN
+	1    1700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3200 1700 3550
+Connection ~ 1700 3550
+$Comp
+L R R2
+U 1 1 5B3A4158
+P 2550 3050
+F 0 "R2" V 2630 3050 50  0000 C CNN
+F 1 "np" V 2550 3050 50  0000 C CNN
+F 2 "_Passive:R_0402" V 2480 3050 50  0001 C CNN
+F 3 "" H 2550 3050 50  0000 C CNN
+	1    2550 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3200 2550 3550
+Connection ~ 2550 3550
+Wire Wire Line
+	1700 2900 1700 2800
+Wire Wire Line
+	1700 2800 7550 2800
+Connection ~ 1850 2800
+Wire Wire Line
+	2550 2800 2550 2900
+$Comp
+L +3.3V #PWR01
+U 1 1 5B3A421B
+P 5000 2600
+F 0 "#PWR01" H 5000 2450 50  0001 C CNN
+F 1 "+3.3V" H 5000 2740 50  0000 C CNN
+F 2 "" H 5000 2600 50  0000 C CNN
+F 3 "" H 5000 2600 50  0000 C CNN
+	1    5000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5B3A4235
+P 5000 4550
+F 0 "#PWR02" H 5000 4300 50  0001 C CNN
+F 1 "GND" H 5000 4400 50  0000 C CNN
+F 2 "" H 5000 4550 50  0000 C CNN
+F 3 "" H 5000 4550 50  0000 C CNN
+	1    5000 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2600 5000 3100
+Wire Wire Line
+	5000 4100 5000 4550
+Connection ~ 5000 2800
+Connection ~ 2550 2800
+Wire Wire Line
+	1900 4250 7600 4250
+Connection ~ 5000 4250
+Text GLabel 5800 3700 2    40   Input ~ 0
+I2C_SCL
+Text GLabel 5800 3800 2    40   Input ~ 0
+I2C_SDA
+Wire Wire Line
+	5700 3700 5800 3700
+Wire Wire Line
+	5700 3800 5800 3800
+$Comp
+L CONN_02X03 P2
+U 1 1 5B3A46DA
+P 3950 3500
+F 0 "P2" H 3950 3700 50  0000 C CNN
+F 1 "CONN_02X03" H 3950 3300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 3950 2300 50  0001 C CNN
+F 3 "" H 3950 2300 50  0000 C CNN
+	1    3950 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3600 3700 3600
+Wire Wire Line
+	3600 2800 3600 3600
+Connection ~ 3600 2800
+Wire Wire Line
+	3700 3500 3600 3500
+Connection ~ 3600 3500
+Wire Wire Line
+	3700 3400 3600 3400
+Connection ~ 3600 3400
+Wire Wire Line
+	4200 3400 4300 3400
+Wire Wire Line
+	4200 3500 4300 3500
+Wire Wire Line
+	4200 3600 4300 3600
+$Comp
+L TP_Top TT3
+U 1 1 5B3A4926
+P 5750 3250
+F 0 "TT3" H 5800 3280 35  0000 C CNN
+F 1 "WP" H 5760 3380 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 5750 3300 50  0001 C CNN
+F 3 "" H 5750 3300 50  0000 C CNN
+	1    5750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3500 5750 3500
+Wire Wire Line
+	5750 3500 5750 3250
+$Comp
+L C C1
+U 1 1 5B3A4B07
+P 3250 3050
+F 0 "C1" H 3275 3150 50  0000 L CNN
+F 1 "0.1uF" H 3275 2950 50  0000 L CNN
+F 2 "_Passive:C_0402" H 3288 2900 50  0001 C CNN
+F 3 "" H 3250 3050 50  0000 C CNN
+	1    3250 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2700 3250 2900
+Connection ~ 3250 2800
+Wire Wire Line
+	3250 4250 3250 3200
+Connection ~ 3250 4250
+$Comp
+L TP_Top TT4
+U 1 1 5B3A4DE5
+P 6650 3250
+F 0 "TT4" H 6700 3280 35  0000 C CNN
+F 1 "SDA" H 6660 3380 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 6650 3300 50  0001 C CNN
+F 3 "" H 6650 3300 50  0000 C CNN
+	1    6650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP_Top TT7
+U 1 1 5B3A4E55
+P 8250 3250
+F 0 "TT7" H 8300 3280 35  0000 C CNN
+F 1 "CS3" H 8260 3380 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 8250 3300 50  0001 C CNN
+F 3 "" H 8250 3300 50  0000 C CNN
+	1    8250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3250 6650 3550
+Connection ~ 6650 3550
+Wire Wire Line
+	7600 4250 7600 3450
+Wire Wire Line
+	7550 2800 7550 3650
+$Comp
+L TP_Top TT5
+U 1 1 5B3A524E
+P 7000 3250
+F 0 "TT5" H 7050 3280 35  0000 C CNN
+F 1 "MISO" H 7010 3380 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 7000 3300 50  0001 C CNN
+F 3 "" H 7000 3300 50  0000 C CNN
+	1    7000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP_Top TT6
+U 1 1 5B3A5282
+P 7350 3250
+F 0 "TT6" H 7400 3280 35  0000 C CNN
+F 1 "MOSI" H 7360 3380 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 7350 3300 50  0001 C CNN
+F 3 "" H 7350 3300 50  0000 C CNN
+	1    7350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP_Top TT8
+U 1 1 5B3A52BB
+P 8550 3250
+F 0 "TT8" H 8600 3280 35  0000 C CNN
+F 1 "SCL" H 8560 3380 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 8550 3300 50  0001 C CNN
+F 3 "" H 8550 3300 50  0000 C CNN
+	1    8550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP_Top TT9
+U 1 1 5B3A52F4
+P 8850 3250
+F 0 "TT9" H 8900 3280 35  0000 C CNN
+F 1 "CS2" H 8860 3380 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 8850 3300 50  0001 C CNN
+F 3 "" H 8850 3300 50  0000 C CNN
+	1    8850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP_Top TT10
+U 1 1 5B3A5330
+P 9150 3250
+F 0 "TT10" H 9200 3280 35  0000 C CNN
+F 1 "CLK" H 9160 3380 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 9150 3300 50  0001 C CNN
+F 3 "" H 9150 3300 50  0000 C CNN
+	1    9150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP_Top TT11
+U 1 1 5B3A536F
+P 9450 3250
+F 0 "TT11" H 9500 3280 35  0000 C CNN
+F 1 "CS1" H 9460 3380 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 9450 3300 50  0001 C CNN
+F 3 "" H 9450 3300 50  0000 C CNN
+	1    9450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3550 9700 3550
+Wire Wire Line
+	8250 3250 8250 3450
+Connection ~ 8250 3450
+Wire Wire Line
+	8550 3250 8550 3550
+Connection ~ 8550 3550
+Wire Wire Line
+	8850 3250 8850 3650
+Connection ~ 8850 3650
+Wire Wire Line
+	9150 3250 9150 3750
+Connection ~ 9150 3750
+Wire Wire Line
+	9450 3250 9450 3850
+Connection ~ 9450 3850
+Wire Wire Line
+	7000 3250 7000 3750
+Connection ~ 7000 3750
+Wire Wire Line
+	7350 3250 7350 3850
+Connection ~ 7350 3850
+$Comp
+L TP_Top TT2
+U 1 1 5B3A597D
+P 3250 2700
+F 0 "TT2" H 3300 2730 35  0000 C CNN
+F 1 "3.3v" H 3260 2830 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 3250 2750 50  0001 C CNN
+F 3 "" H 3250 2750 50  0000 C CNN
+	1    3250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP_Top TT1
+U 1 1 5B3A59CE
+P 3050 4150
+F 0 "TT1" H 3100 4180 35  0000 C CNN
+F 1 "GND" H 3060 4280 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 3050 4200 50  0001 C CNN
+F 3 "" H 3050 4200 50  0000 C CNN
+	1    3050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4150 3050 4250
+Connection ~ 3050 4250
+Text Notes 3950 4900 0    50   ~ 0
+Note: A0, A1, A2 address lines and WP have internal pulldowns
+$EndSCHEMATC

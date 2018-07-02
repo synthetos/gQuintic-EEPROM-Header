@@ -1,5 +1,16 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 24C16
+D I2C Serial EEPROM
+K EEPROM Serial
+$ENDCMP
+#
+$CMP 24C512
+D I2C Serial eprom
+K I2C MEMORY
+F memory/24xx512.pdf
+$ENDCMP
+#
 $CMP 74HC125
 D Quad Buffer and Level Shifter
 K TTL DECOD DECOD8

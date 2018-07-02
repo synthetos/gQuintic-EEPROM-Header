@@ -1,4 +1,4 @@
-update=Monday, July 02, 2018 'AMt' 08:17:38 AM
+update=Monday, July 02, 2018 'AMt' 09:01:33 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -61,3 +59,5 @@ LibName29=valves
 LibName30=ProjectLibrary/_Active
 LibName31=ProjectLibrary/_Connector
 LibName32=ProjectLibrary/_Passive
+[general]
+version=1

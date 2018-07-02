@@ -31,11 +31,12 @@ LIBS:valves
 LIBS:_Active
 LIBS:_Connector
 LIBS:_Passive
+LIBS:EEPROM-Header-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "EEPROM Expansion Header"
 Date "2-July-2018"
 Rev "revA"
@@ -45,4 +46,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Sheet
+S 2050 1400 1500 950 
+U 5B3A2134
+F0 "EEPROM Header CIrcuit" 60
+F1 "EEPROM-Header-ckt.sch" 60
+$EndSheet
 $EndSCHEMATC
