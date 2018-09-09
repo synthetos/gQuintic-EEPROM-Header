@@ -761,13 +761,13 @@ Connection ~ 6150 3500
 Wire Wire Line
 	1050 2900 1300 2900
 Wire Wire Line
-	1150 2400 1150 2800
+	1100 2400 1100 2800
 Wire Wire Line
-	1150 2800 1300 2800
+	1100 2800 1300 2800
 Wire Wire Line
-	1150 3000 1150 3400
+	1100 3000 1100 3400
 Wire Wire Line
-	1150 3000 1300 3000
+	1100 3000 1300 3000
 $Comp
 L TCA9548APWR U2
 U 1 1 5B95D1AE
@@ -1194,13 +1194,13 @@ Connection ~ 6200 6650
 Wire Wire Line
 	1100 6050 1350 6050
 Wire Wire Line
-	1200 5550 1200 5950
+	1150 5550 1150 5950
 Wire Wire Line
-	1200 5950 1350 5950
+	1150 5950 1350 5950
 Wire Wire Line
-	1200 6150 1200 6550
+	1150 6150 1150 6550
 Wire Wire Line
-	1200 6150 1350 6150
+	1150 6150 1350 6150
 Wire Wire Line
 	650  750  6000 750 
 Wire Wire Line
@@ -1440,9 +1440,9 @@ F 4 "XXX-00000" H 900 3700 60  0001 C CNN "PROD_ID"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1050 2400 1150 2400
+	1050 2400 1100 2400
 Wire Wire Line
-	1150 3400 1050 3400
+	1100 3400 1050 3400
 Wire Wire Line
 	900  2200 650  2200
 Connection ~ 650  2200
@@ -1460,9 +1460,9 @@ Connection ~ 700  5850
 Wire Wire Line
 	700  6350 950  6350
 Wire Wire Line
-	1100 5550 1200 5550
+	1100 5550 1150 5550
 Wire Wire Line
-	1200 6550 1100 6550
+	1150 6550 1100 6550
 Wire Wire Line
 	600  5750 600  6800
 Wire Wire Line
@@ -1546,4 +1546,16 @@ Text Label 3050 6150 0    40   ~ 0
 1.SD6
 Text Label 3050 6450 0    40   ~ 0
 1.SD7
+Text Label 1150 2800 0    40   ~ 0
+0.A0
+Text Label 1150 2900 0    40   ~ 0
+0.A1
+Text Label 1150 3000 0    40   ~ 0
+0.A2
+Text Label 1200 5950 0    40   ~ 0
+1.A0
+Text Label 1200 6050 0    40   ~ 0
+1.A1
+Text Label 1200 6150 0    40   ~ 0
+1.A2
 $EndSCHEMATC
