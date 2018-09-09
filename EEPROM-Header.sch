@@ -32,6 +32,7 @@ LIBS:_Active
 LIBS:_Connector
 LIBS:_Passive
 LIBS:SparkFun-Jumpers
+LIBS:TCA9548APWR
 LIBS:EEPROM-Header-cache
 EELAYER 25 0
 EELAYER END
@@ -39,8 +40,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 2
 Title "EEPROM Expansion Header"
-Date "2-July-2018"
-Rev "revA"
+Date "9-Sep-2018"
+Rev "revB"
 Comp "Synthetos"
 Comment1 ""
 Comment2 ""
