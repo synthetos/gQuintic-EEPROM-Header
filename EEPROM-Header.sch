@@ -39,8 +39,8 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 2
-Title "EEPROM Expansion Header"
-Date "9-Sep-2018"
+Title "EEPROM / I2C Expansion Header"
+Date "10-Sep-2018"
 Rev "revB"
 Comp "Synthetos"
 Comment1 ""

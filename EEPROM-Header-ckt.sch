@@ -40,7 +40,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "EEPROM / I2C Expansion Header"
-Date "9-Sep-2018"
+Date "10-Sep-2018"
 Rev "revB"
 Comp "Synthetos"
 Comment1 ""
@@ -70,21 +70,21 @@ F 3 "" H 9100 5050 50  0000 C CNN
 	1    9100 5050
 	1    0    0    -1  
 $EndComp
-Text GLabel 8100 2500 0    40   Input ~ 0
+Text GLabel 7900 2500 0    40   Input ~ 0
 I2C_SDA
-Text GLabel 8100 2700 0    40   Input ~ 0
+Text GLabel 7900 2700 0    40   Input ~ 0
 SPI_MISO
-Text GLabel 8100 2800 0    40   Input ~ 0
+Text GLabel 7900 2800 0    40   Input ~ 0
 SPI_MOSI
-Text GLabel 9650 2500 2    40   Input ~ 0
+Text GLabel 9900 2500 2    40   Input ~ 0
 I2C_SCL
-Text GLabel 9650 2800 2    40   Input ~ 0
+Text GLabel 9900 2800 2    40   Input ~ 0
 SPI_CS1
-Text GLabel 9650 2600 2    40   Input ~ 0
+Text GLabel 9900 2600 2    40   Input ~ 0
 SPI_CS2
-Text GLabel 9650 2400 2    40   Input ~ 0
+Text GLabel 9900 2400 2    40   Input ~ 0
 SPI_CS3
-Text GLabel 9650 2700 2    40   Input ~ 0
+Text GLabel 9900 2700 2    40   Input ~ 0
 SPI_CLK
 $Comp
 L R R33
@@ -135,10 +135,10 @@ I2C_SCL
 Text GLabel 9900 5250 2    40   Input ~ 0
 I2C_SDA
 $Comp
-L TP_Top TT1
+L TP_Top TT5
 U 1 1 5B3A4926
 P 9850 4700
-F 0 "TT1" H 9900 4730 35  0000 C CNN
+F 0 "TT5" H 9900 4730 35  0000 C CNN
 F 1 "WP" H 9860 4830 50  0000 C CNN
 F 2 "_Connector:Test_Point_SMD_0.040_Top" H 9850 4750 50  0001 C CNN
 F 3 "" H 9850 4750 50  0000 C CNN
@@ -148,12 +148,12 @@ $EndComp
 $Comp
 L C C3
 U 1 1 5B3A4B07
-P 10050 2000
-F 0 "C3" H 10075 2100 50  0000 L CNN
-F 1 "0.1uF" H 10075 1900 50  0000 L CNN
-F 2 "_Passive:C_0402" H 10088 1850 50  0001 C CNN
-F 3 "" H 10050 2000 50  0000 C CNN
-	1    10050 2000
+P 10300 2000
+F 0 "C3" H 10325 2100 50  0000 L CNN
+F 1 "0.1uF" H 10325 1900 50  0000 L CNN
+F 2 "_Passive:C_0402" H 10338 1850 50  0001 C CNN
+F 3 "" H 10300 2000 50  0000 C CNN
+	1    10300 2000
 	1    0    0    -1  
 $EndComp
 Text Notes 7900 5900 0    50   ~ 0
@@ -570,21 +570,21 @@ Wire Wire Line
 Wire Wire Line
 	8700 2400 8800 2400
 Wire Wire Line
-	8100 2500 8800 2500
+	7900 2500 8800 2500
 Wire Wire Line
-	9300 2500 9650 2500
+	9300 2500 9900 2500
 Wire Wire Line
-	8100 2700 8800 2700
+	7900 2700 8800 2700
 Wire Wire Line
-	8800 2800 8100 2800
+	8800 2800 7900 2800
 Wire Wire Line
-	9300 2400 9650 2400
+	9300 2400 9900 2400
 Wire Wire Line
-	9650 2600 9300 2600
+	9900 2600 9300 2600
 Wire Wire Line
-	9650 2700 9300 2700
+	9900 2700 9300 2700
 Wire Wire Line
-	9650 2800 9300 2800
+	9900 2800 9300 2800
 Wire Wire Line
 	8500 2150 8500 2500
 Connection ~ 8500 2500
@@ -637,9 +637,9 @@ Wire Wire Line
 Wire Wire Line
 	650  750  650  3200
 Wire Wire Line
-	10050 3200 10050 2150
+	10300 3200 10300 2150
 Wire Wire Line
-	10050 1750 10050 1850
+	10300 1750 10300 1850
 Wire Wire Line
 	1150 1300 1300 1300
 Wire Wire Line
@@ -1302,7 +1302,7 @@ Wire Wire Line
 	4250 3950 4250 3900
 Connection ~ 4250 3900
 Wire Wire Line
-	8500 1750 10050 1750
+	8500 1750 10300 1750
 $Comp
 L +3.3V #PWR07
 U 1 1 5B961CF0
@@ -1317,7 +1317,7 @@ $EndComp
 Wire Wire Line
 	9950 1300 10450 1300
 Wire Wire Line
-	8700 3200 10050 3200
+	8500 3200 10300 3200
 Wire Wire Line
 	7700 4250 9100 4250
 $Comp
@@ -1628,4 +1628,59 @@ Wire Wire Line
 Wire Wire Line
 	10250 950  10250 1300
 Connection ~ 10250 1300
+$Comp
+L TP_Top TT1
+U 1 1 5B970B6F
+P 8050 2100
+F 0 "TT1" H 8100 2130 35  0000 C CNN
+F 1 "SDA" H 8060 2230 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 8050 2150 50  0001 C CNN
+F 3 "" H 8050 2150 50  0000 C CNN
+	1    8050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP_Top TT4
+U 1 1 5B970EAD
+P 9700 2100
+F 0 "TT4" H 9750 2130 35  0000 C CNN
+F 1 "SDA" H 9710 2230 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 9700 2150 50  0001 C CNN
+F 3 "" H 9700 2150 50  0000 C CNN
+	1    9700 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2100 8050 2500
+Connection ~ 8050 2500
+Wire Wire Line
+	9700 2100 9700 2500
+Connection ~ 9700 2500
+$Comp
+L TP_Top TT3
+U 1 1 5B971ABB
+P 8950 1600
+F 0 "TT3" H 9000 1630 35  0000 C CNN
+F 1 "3.3v" H 8960 1730 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 8950 1650 50  0001 C CNN
+F 3 "" H 8950 1650 50  0000 C CNN
+	1    8950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP_Top TT2
+U 1 1 5B971BAE
+P 8500 3100
+F 0 "TT2" H 8550 3130 35  0000 C CNN
+F 1 "GND" H 8510 3230 50  0000 C CNN
+F 2 "_Connector:Test_Point_SMD_0.040_Top" H 8500 3150 50  0001 C CNN
+F 3 "" H 8500 3150 50  0000 C CNN
+	1    8500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1600 8950 1750
+Connection ~ 8950 1750
+Wire Wire Line
+	8500 3200 8500 3100
 $EndSCHEMATC
