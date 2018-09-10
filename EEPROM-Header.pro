@@ -1,4 +1,4 @@
-update=Sunday, September 09, 2018 'PMt' 02:33:59 PM
+update=Monday, September 10, 2018 'AMt' 09:15:38 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,13 @@ LibName31=ProjectLibrary/_Connector
 LibName32=ProjectLibrary/_Passive
 LibName33=/Users/Alden/Projects/Kicad/SparkFun-KiCad-Libraries/Libraries/SparkFun-Jumpers
 LibName34=/Users/Alden/Projects/proj109_WinchTermination/TerminationBoard/ProjectLibrary/TCA9548APWR
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
